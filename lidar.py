@@ -3,5 +3,5 @@ import time
 
 Lidar = TFminiI2C(1, 0x10)
 while True:
-	print("Distancia: ", Lidar.readAll(), " cm.")
+	print("Distancia: ", Lidar.readDistance(), " cm.")
 	time.sleep(3)
